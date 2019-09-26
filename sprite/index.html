@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Генератор спрайтов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sprite-generator" id="generator">
+        <div class="sprite-generator__title">
+            <h2>Генератор спрайтов</h2>   
+        </div>
+        <p>Добавьте изображения и нажмите на кнопку «Сгенерировать спрайт»</p>
+        <p>Размер каждого изображения не должен превышать 30 Кб. Максимальное количество изображений - 81</p>
+        <input type="file" multiple class="sprite-generator__upload">
+        <span class="error hidden"></span>
+        <div class="images__added-count">Изображений в спрайте:
+            <span class="images__added-count-value">0</span>
+        </div>
+        <!-- <canvas id="canvas"></canvas> -->
+        <button class="sprite-generator__generate">Сгенерировать спрайт</button>
+        <button class="sprite-generator__clear">Очистить генератор</button>
+        <div class="sprite-generator__result">
+
+            <div class="sprite-generator__preview">
+                <img alt="" class="sprite-generator__result-image">
+            </div>
+            <textarea class="sprite-generator__code" cols="30" rows="15" placeholder="Здесь будет ваш CSS" readonly></textarea>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

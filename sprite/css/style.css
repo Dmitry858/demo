@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Verdana;
+  background-color: #e0eaf4;
+}
+
+.sprite-generator {
+  box-sizing: border-box;
+  padding: 0 10px 10px;
+}
+
+.sprite-generator__title {
+  margin: 0 -10px;
+  padding: 20px 10px;
+  background-color: #333f88;
+  color: #ffffff;
+}
+
+.sprite-generator__title h2 {
+  margin: 0;
+}
+
+.sprite-generator__result {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+}
+.images__added-count {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.sprite-generator__preview {
+  flex-grow: 1;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.sprite-generator__result-image {
+  max-width: 100%;
+}
+
+.sprite-generator__code {
+  flex-grow: 1;
+}
+
+.sprite-generator__generate, .sprite-generator__clear, .sprite-generator__download {
+  background-color: #333f88;
+  padding: 7px;
+  color: #ffffff;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sprite-generator__clear {
+  margin-left: 20px;
+}
+
+.sprite-generator__download {
+  text-decoration: none;
+}
+
+.sprite-generator__generate:hover, .sprite-generator__clear:hover, .sprite-generator__download:hover {
+  background-color: #111F6E;
+  transition: 0.3s;
+}
+
+.error {
+  color: #e00000;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.disabled, .disabled:hover {
+  background-color: #808080;
+  cursor: default;
+}
