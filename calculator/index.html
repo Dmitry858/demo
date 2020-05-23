@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор услуг</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Калькулятор</h1>
+
+        <div class="steps-points">
+            <ul>
+                <li class="point current">Услуга</li>
+                <li class="point">Адрес</li>
+                <li class="point">Площадь</li>
+                <li class="point">Ваши контакты</li>
+                <li class="point">Расчёт</li>
+            </ul>
+        </div>
+
+        <div class="steps-points-mobile">
+            <div class="point-mobile-current">Услуга</div>
+            <ul class="points-mobile-list hidden">
+                <li class="point-mobile current">Услуга</li>
+                <li class="point-mobile">Адрес</li>
+                <li class="point-mobile">Площадь</li>
+                <li class="point-mobile">Ваши контакты</li>
+                <li class="point-mobile">Расчёт</li>
+            </ul>
+        </div>
+
+        <form class="steps-wrap" action="">
+            <div class="step step-one active">
+                <h2 class="step-title">Укажите какие услуги вам нужны</h2>
+
+                <div class="element-wrap">
+                    <img src="./img/service1.jpg" alt="">
+                    <input type="checkbox" id="service1" name="service1" value="Подготовка технического плана">
+                    <label for="service1">Подготовка технического плана</label>
+                </div>
+
+                <div class="element-wrap">
+                    <img src="./img/service2.jpg" alt="">
+                    <input type="checkbox" id="service2" name="service2" value="Вынос границ участка в натуру">
+                    <label for="service2">Вынос границ участка в натуру</label>
+                </div>
+
+                <div class="element-wrap">
+                    <img src="./img/service3.jpg" alt="">
+                    <input type="checkbox" id="service3" name="service3" value="Подготовка межевого плана">
+                    <label for="service3">Подготовка межевого плана</label>                    
+                </div>
+
+                <div class="element-wrap">
+                    <img src="./img/service4.jpg" alt="">
+                    <input type="checkbox" id="service4" name="service4" value="Исполнительная съёмка">
+                    <label for="service4">Исполнительная съёмка</label>                    
+                </div>
+
+                <div class="element-wrap">
+                    <img src="./img/service5.jpg" alt="">
+                    <input type="checkbox" id="service5" name="service5" value="Топографическая съёмка">
+                    <label for="service5">Топографическая съёмка</label>                   
+                </div>
+
+                <div class="element-wrap">
+                    <a class="question" href="#">?</a>
+                    <a class="btn btn-forward" href="#">Дальше</a>
+                </div>
+
+            </div>
+
+            <div class="step step-two hidden">
+                <h2 class="step-title">Укажите адрес работ</h2>
+
+                <div class="element-wrap">
+                    <input type="text" placeholder="Например, г. Москва, ул. Примерная, 1" required="required">
+                    <a class="question" href="#">?</a>
+                </div>
+
+                <div class="nav-links">
+                    <a class="btn btn-back" href="#">Назад</a>
+                    <a class="btn btn-forward" href="#">Дальше</a>
+                </div>
+            </div>
+
+            <div class="step step-three hidden">
+                <h2 class="step-title">Укажите площадь объекта в сотках</h2>
+
+                <div class="element-wrap">
+                    <input type="number" value="" required="required">
+                    <input type="checkbox" class="custom-checkbox" id="docs" name="docs" value="Подать документы" checked required="required">
+                    <label for="docs">Подать документы</label>  
+                </div>
+
+                <div class="element-wrap">
+                    <a class="question" href="#">?</a>
+                </div>
+
+                <div class="nav-links">
+                    <a class="btn btn-back" href="#">Назад</a>
+                    <a class="btn btn-forward" href="#">Дальше</a>
+                </div>
+            </div>
+
+            <div class="step step-four hidden">
+                <h2 class="step-title">Оставьте свои данные для расчёта суммы</h2>
+
+                <div class="element-wrap">
+                    <div class="inputs-group">
+                        <input type="text" placeholder="Имя" required="required">
+                        <input type="text" placeholder="Телефон" required="required">
+                        <textarea name="comment" placeholder="Комментарий"></textarea>
+                    </div>
+
+                    <div class="checkboxes-group">
+                        <input type="checkbox" class="custom-checkbox" id="call" name="call" value="Позвонить на телефон" checked>
+                        <label for="call">Позвонить на телефон</label> 
+
+                        <input type="checkbox" class="custom-checkbox" id="whatsapp" name="whatsapp" value="Отправить сообщение в WhatsApp">
+                        <label for="whatsapp">Отправить сообщение в WhatsApp</label> 
+
+                        <input type="checkbox" class="custom-checkbox" id="viber" name="viber" value="Отправить сообщение в Viber">
+                        <label for="viber">Отправить сообщение в Viber</label> 
+                    </div> 
+                </div>
+
+                <div class="element-wrap">
+                    <a class="question" href="#">?</a>
+                </div>
+
+                <div class="element-wrap w100">
+                    <input type="checkbox" class="custom-checkbox" id="agree" name="agree" value="Согласие с политикой персональных данных" checked required="required">
+                    <label for="agree">Согласие с <a class="agreement" href="#">Политикой персональных данных</a></label>  
+                </div>
+
+                <div class="nav-links">
+                    <a class="btn btn-back" href="#">Назад</a>
+                    <button type="submit" class="btn btn-forward" href="#">Дальше</button>
+                </div>
+            </div>
+
+            <div class="step step-five hidden">
+                <h2 class="step-title">Примерная сумма проекта</h2>
+
+                <div class="result">
+                    <div class="user-data">
+                        <p><span>1. Услуга:</span> <span>Исполнительная съёмка</span></p>
+                        <p><span>По адресу:</span> <span>Москва, МО</span></p>
+                        <p><span>Площадь:</span> <span>21 сотка</span></p>
+                    </div>
+                    <div class="price">
+                        <p><span>Ориентировочная стоимость услуги:</span> <span class="crossed-out">10 000 р.</span></p>
+                        <p><span>Скидка:</span> <span class="primary-color">10%</span></p>
+                        <p><span>Стоимость услуги с учетом скидки:</span> <span class="primary-color">9 000 р.</span></p>
+                    </div>
+                    <div class="discount">
+                        <p><span>Акция:</span> <span class="primary-color larger-font">Геоакция на Март</span></p>
+                        <div class="total-price-link">
+                            <a href="#">Ориентировочный бюджет проекта с учетом скидки:</a>      
+                            <a class="down-arrow" href="#">&darr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+                    <div class="user-data">
+                        <p><span>2. Услуга:</span> <span>Исполнительная съёмка</span></p>
+                        <p><span>По адресу:</span> <span>Москва, МО</span></p>
+                        <p><span>Площадь:</span> <span>21 сотка</span></p>
+                    </div>
+                    <div class="price">
+                        <p><span>Ориентировочная стоимость услуги:</span> <span class="primary-color">10 000 р.</span></p>
+                    </div>
+                    <div class="discount discount-empty">
+                    </div>
+                </div>
+
+                <div class="result">
+                    <div class="user-data">
+                        <p><span>3. Услуга:</span> <span>Исполнительная съёмка</span></p>
+                        <p><span>По адресу:</span> <span>Москва, МО</span></p>
+                        <p><span>Площадь:</span> <span>21 сотка</span></p>
+                    </div>
+                    <div class="price">
+                        <p><span>Ориентировочная стоимость услуги:</span> <span class="crossed-out">10 000 р.</span></p>
+                        <p><span>Скидка:</span> <span class="primary-color">10%</span></p>
+                        <p><span>Стоимость услуги с учетом скидки:</span> <span class="primary-color">9 000 р.</span></p>
+                    </div>
+                    <div class="discount">
+                        <p><span>Акция:</span> <span class="primary-color larger-font">Скидка на всё 10%</span></p>
+                    </div>
+                </div>
+
+                <div class="total-price">
+                    <p><span>Ориентировочный бюджет проекта с учётом скидки:</span> <span>15 990 р.</span></p>                    
+                </div>
+
+                <div class="reset-form">
+                    <button type="reset" class="btn btn-reset" href="#">Сделать ещё один расчёт</button>
+                </div>
+            </div>
+
+        </form>
+          
+    </div> 
+
+    <script src="./js/common.js"></script>
+</body>
+</html>
